@@ -51,7 +51,7 @@
 //Required modules:
 const mongoose = require("mongoose");
 //We want to import the Blog model:
-const Blog = require("./models/blog");
+const Blog = require("../models/blog");
 
 const express = require("express");
 console.log("App has started............................................................................");
