@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%-include("./partials/headCreate")  %>
+  <body>
+    <header>
+        <!-- Let's innclude the nav trough ejs -->
+        <%- include("./partials/nav") %>
+    </header>
+    <main>
+      <div class="form-container">
+        <h2>Create New Blog Post</h2>
+        <form method="POST" action="/blogs">
+            <div>
+              <label for="title">Title</label>
+              <input type="text" name="title" id="title" required>
+            </div>
+            <div>
+              <label for="author">Author</label>
+              <input type="text" name="author" id="author" required>
+            </div>
+            <!-- <div>
+              <label for="image">Image</label>
+              <input type="file" name="image" id="image">
+            </div> -->
+            <div>
+              <label for="content">Content</label>
+              <textarea name="content" id="content" required></textarea>
+            </div>
+            <div class="submit-btn">
+              <button type="submit">Create Blog</button>
+            </div>
+          </form>
+        </div>
+      </main>
+    </body>
+    <%- include("./partials/footer") %>
+  </html>
+
+  
